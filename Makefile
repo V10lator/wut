@@ -23,7 +23,6 @@ SOURCES		:=	cafe \
 				libraries/wutstdc++ \
 				libraries/wutmalloc \
 				libraries/wutdevoptab \
-				libraries/wutsocket \
 				libraries/libwhb/src \
 				libraries/libgfd/src \
 				libraries/nn_swkbd

@@ -4,6 +4,7 @@
 NSSLAddServerPKI
 NSSLAddServerPKIExternal
 NSSLAddServerPKIGroups
+NSSLCreateConnection
 NSSLCreateContext
 NSSLDestroyConnection
 NSSLDestroyContext
@@ -70,16 +71,6 @@ WDUdsUninitParent
 WDWpsStart
 WDWpsStartAsync
 WDWpsStop
-htonl
-htons
-inet_aton
-inet_ntoa
-inet_ntoa_r
-ntohl
-ntohs
-
-:TEXT_WRAP
-NSSLCreateConnection
 accept
 bind
 clear_resolver_cache
@@ -101,6 +92,11 @@ getpeername
 getsocklibopt
 getsockname
 getsockopt
+htonl
+htons
+inet_aton
+inet_ntoa
+inet_ntoa_r
 inet_ntop
 inet_pton
 listen
@@ -151,6 +147,8 @@ netconf_set_wifi_cfg
 netconf_setopt
 netconf_write_aoss_config
 netconf_write_compat_profile_id
+ntohl
+ntohs
 recv
 recvfrom
 recvfrom_ex

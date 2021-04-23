@@ -1,8 +1,6 @@
 #include <coreinit/memdefaultheap.h>
 #include <coreinit/mutex.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
+#include <nsysnet/socket.h>
 #include <string.h>
 #include <whb/log.h>
 #include <whb/log_udp.h>
@@ -31,6 +29,7 @@ BOOL
 WHBLogUdpInit()
 {
    int broadcastEnable = 1;
+   WHBInitializeSocketLibrary();
 
    sSocket = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
    if (sSocket < 0) {
@@ -54,5 +53,6 @@ WHBLogUdpDeinit()
       return FALSE;
    }
 
+   WHBDeinitializeSocketLibrary();
    return WHBRemoveLogHandler(udpLogHandler);
 }
