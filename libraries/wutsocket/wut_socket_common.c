@@ -2,8 +2,6 @@
 
 #define NSYSNET_UNKNOWN_ERROR_OFFSET 10000
 
-int h_errno;
-
 static BOOL
 __wut_socket_initialised = FALSE;
 
